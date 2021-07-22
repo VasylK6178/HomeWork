@@ -1,42 +1,54 @@
 
-
-
 // - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 //
-function nambers (a, b) {
-    for (let i=0; i<b; i+=6) {
-        console.log(i)
-    }
+ function nambers () {
+  let arrey = []
+   for (let i=0; i<100; i++) {
+        arrey [i] = Math.round(Math.random() * 100);
+   }
+    return arrey;
 }
-nambers(0, 100 )
+console.log(nambers())
 
 // - Змінти попередню функцію, щоб діапазон можна було визначити через аргументи.
+//
+ function nam(a) {
+  let masnam = [];
+  for(let i = 0; i < a; i++) {
+      masnam[i] = Math.round(Math.random()*100);
+  }
+   return masnam;
+ }
 
-// function nambers2 (a, b, c) {
-//     for (let i=0; i<b; i=c) {
-//         console.log(i)
-//     }
-// }
-// nambers2 (0, 100, 6)
+console.log(nam(60));
+
 
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. Відсортувати його за допомоги sort
 
-function nambers3 (a, b, c) {
-    for (let i=0; i<b; i=c) {
-        console.log(i)
-    }
-}
-nambers3 (0, 100, 6)
+let nammas = nam (30);
+console.log(nammas);
+console.log(nammas.sort((a, b) => a - b));
+console.log(nammas.sort((a, b) => b - a));
 
-
-let strings = nambers3.sort();
-console.log(strings)
 
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. відфільтрувати  його за допомоги
 // filter, за лишивши тільки парні числа
 
+ let nammas2 = nam (30)
+ console.log(nammas2);
+ console.log(nammas2.filter(elem => elem % 2 == 0));
 
-nambers.3
+// - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) .
+// за допомоги map та колбеку перетворити всі об'єкти в масиві на срінгові.
+
+
+let nammas3 = nam (40)
+nammas3.map (function (i) {
+ return {
+   i: i.toString()
+ }
+});
+console.log(nammas3)
 
 
 
