@@ -53,7 +53,8 @@ nammas3.map (function (i) {
 // ' та Відсортувати його по id. по зростанню (sort)
 
 class User {
-  constructor (name, surname, email, phone) {
+  constructor (id, name, surname, email, phone) {
+    this.id = id
     this.name = name;
     this.surname = surname;
     this.email = email;
@@ -61,27 +62,35 @@ class User {
   }
 
  }
-let alina = new User ('Alina', 'Fedoriv', 'jfjf@i.ua', '097543322');
+let alina = new User (1,'Alina', 'Fedoriv', 'jfjf@i.ua', '097543322');
 console.log(alina)
-let ihor = new User ('Ihor', 'Udefed', 'kjkkj@i.ua', '09775038475');
+let ihor = new User (2,'Ihor', 'Udefed', 'kjkkj@i.ua', '09 5038475');
 console.log(ihor)
-let galia = new User ('Galia', 'Koval', 'urujf@i.ua', '0979673623');
+let galia = new User (3,'Galia', 'Koval', 'urujf@i.ua', '09793623');
 console.log(galia)
-let dima = new User ('Dima', 'Jacuk', 'snef@i.ua', '0993747457');
+let dima = new User (4,'Dima', 'Jacuk', 'snef@i.ua', '09937457');
 console.log(dima)
-let kolya = new User ('Kolya', 'Huder', 'dkdmek@com.ua', '09548484859');
+let kolya = new User (5,'Kolya', 'Huder', 'dkdmek@com.ua', '095484859');
 console.log(kolya)
-let karina = new User ('Karina', 'Nimak', 'jeueur@ukr.net', '09345757578');
+let karina = new User (6,'Karina', 'Nimak', 'jeueur@ukr.net', '093457578');
 console.log(karina)
-let kostja = new User ('Kostja', 'ivanyshyn', 'dekek@com.ua', '04748743623');
+let kostja = new User (7,'Kostja', 'ivanyshyn', 'dekek@com.ua', '047483623');
 console.log(kostja)
-let roman = new User ('Roman', 'Lovak', 'xmemjk@i.ua', '0977365287');
+let roman = new User (8,'Roman', 'Lovak', 'xmemjk@i.ua', '09775287');
 console.log(roman);
-let anna = new User ('Anna', 'Mudryk', 'kellef@ukr.net', '098443787')
+let anna = new User (9,'Anna', 'Mudryk', 'kellef@ukr.net', '098443787')
 console.log(anna)
-let luda = new User ('Luda', 'Kljuk', 'dofnwf@ukr.net', '0973939087')
+let luda = new User (10,'Luda', 'Kljuk', 'dofnwf@ukr.net', '0973978087')
 console.log(luda)
 
+let Users = [alina, ihor, galia, dima, kolya, karina, kostja, roman, anna, luda];
+console.log(Users)
+
+
+
+
+
+// Взяти масив цей User[] та: Відфільтрувати, залишивши тільки об'єкти з парними id (filter)'
 
 
 
