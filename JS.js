@@ -64,7 +64,7 @@ class User {
  }
 let alina = new User (1,'Alina', 'Fedoriv', 'jfjf@i.ua', '097543322');
 console.log(alina)
-let ihor = new User (2,'Ihor', 'Udefed', 'kjkkj@i.ua', '09 5038475');
+let ihor = new User (2,'Ihor', 'Udefed', 'kjkkj@i.ua', '095038475');
 console.log(ihor)
 let galia = new User (3,'Galia', 'Koval', 'urujf@i.ua', '09793623');
 console.log(galia)
@@ -83,14 +83,30 @@ console.log(anna)
 let luda = new User (10,'Luda', 'Kljuk', 'dofnwf@ukr.net', '0973978087')
 console.log(luda)
 
-let Users = [alina, ihor, galia, dima, kolya, karina, kostja, roman, anna, luda];
+
+let Users = []
+Users.push (alina, ihor, galia, dima, kolya, karina, kostja, roman, anna, luda);
+console.log(Users)
+
+let filtrusers = [2,4,6,8,10];
+let result = Users.filter(
+    ({id}) => filtrusers.includes(id)
+);
+console.log(result);
+
+
+let sortuser = [1,2,3,4,5,6,7,8,9,10]
+Users.sort((a,b)=> sortuser.indexOf(a.id) - sortuser.indexOf(b.id));
 console.log(Users)
 
 
 
 
 
-// Взяти масив цей User[] та: Відфільтрувати, залишивши тільки об'єкти з парними id (filter)'
+
+
+
+
 
 
 
