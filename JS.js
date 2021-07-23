@@ -44,11 +44,16 @@ console.log(nammas.sort((a, b) => b - a));
 
 let nammas3 = nam (40)
 nammas3.map (function (i) {
- return {
-   i: i.toString()
- }
+ console.log(i.toString())
+
 });
-console.log(nammas3)
+
+// - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+// створити пустий масив, наповнити його 10 об'єктами new User(....)
+// Взяти масив цей  User[] та: Відфільтрувати , залишивши тільки об'єкти з парними id (filter)' +
+// ' та Відсортувати його по id. по зростанню (sort)
+
+    let
 
 
 
